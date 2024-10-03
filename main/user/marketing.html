@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Marketing</title>
+    <link rel="stylesheet" href="../style/NewStyle.css">
+    <link rel="icon" href="../style/favico.ico" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+
+    <!--css file-->
+    <link rel="stylesheet" href="../style/NewStyle2.css" />
+</head>
+<body>
+    <div class="banner">
+        <div class="sidebar close">
+            <div class="logo">
+                <img src="../style/LogoH.png"" alt="" style="margin-left: 25px; height: 35px; margin-top: 10px;">
+                <span class="logo-name" style="margin-top: 10px; margin-left: 25px;">Octopus</span>
+            </div>
+
+            <div class="nav-list">
+                <div class="nav-item">
+                    <a href="../MainIndex.html">
+                        <i class="fab fa-microsoft"></i>
+                        <span class="link-name">Home</span>
+                    </a>
+
+                    <div class="sub-menu blank">
+                        <a href="../MainIndex.html" class="link-name">Dashboard</a>
+                    </div>
+                </div>
+
+                <div class="nav-item">
+                    <a href="./dealing.html">
+                        <i class="fas fa-d"></i>
+                        <span class="link-name">Dealing</span>
+                    </a>
+
+                    <div class="sub-menu blank">
+                        <a href="./dealing.html" class="link-name">Dealing</a>
+                    </div>
+                </div>
+
+                <div class="nav-item">
+                    <a href="./risk.html">
+                        <i class="fas fa-r"></i>
+                        <span class="link-name">Risk</span>
+                    </a>
+
+                    <div class="sub-menu blank">
+                        <a href="./risk.html" class="link-name">Risk</a>
+                    </div>
+                </div>
+
+                <div class="nav-item">
+                    <a href="./liquidity.html">
+                        <i class="fas fa-l"></i>
+                        <span class="link-name">Liquidity</span>
+                    </a>
+
+                    <div class="sub-menu blank">
+                        <a href="./liquidity.html" class="link-name">Liquidity</a>
+                    </div>
+                </div>
+
+                <div class="nav-item">
+                    <a href="./marketing.html">
+                        <i class="fas fa-m"></i>
+                        <span class="link-name">Marketing</span>
+                    </a>
+
+                    <div class="sub-menu blank">
+                        <a href="./marketing.html" class="link-name">Marketing</a>
+                    </div>
+                </div>
+
+                <div class="nav-item">
+                    <a href="./ea.html">
+                        <i class="fas fa-e"></i>
+                        <span class="link-name">EA</span>
+                    </a>
+
+                    <div class="sub-menu blank">
+                        <a href="./ea.html" class="link-name">EA</a>
+                    </div>
+                </div>
+
+                <div class="nav-item">
+                    <div class="profile-details">
+                        <div class="profile-content">
+                            <img src="profile.jpg" alt="" />
+                        </div>
+
+                        <div class="name-job">
+                            <div class="name">Fathur</div>
+                            <div class="job">Trading Analyst</div>
+                        </div>
+                        <a href="../../index.html"><i class="fas fa-right-to-bracket"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="home-section">
+            <div class="home-content">
+                <i class="fas fa-bars" style="margin-top: 10px;"></i>
+            </div>
+        </div>
+        <div class="content">
+            <h1>Marketing Page</h1>
+            <p>This is the Marketing page content.</p>
+        </div>
+    </div>
+
+    <script>
+        let btn = document.querySelector(".fa-bars");
+        let sidebar = document.querySelector(".sidebar");
+
+        btn.addEventListener("click", () => {
+            sidebar.classList.toggle("close");
+        });
+
+        let arrows = document.querySelectorAll(".arrow");
+        for (var i = 0; i < arrows.length; i++) {
+            arrows[i].addEventListener("click", (e) => {
+                let arrowParent = e.target.parentElement.parentElement;
+
+                arrowParent.classList.toggle("show");
+            });
+        }
+    </script>
+</body>
+</html>
